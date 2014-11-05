@@ -1,0 +1,19 @@
+body {
+	background-color: red;
+
+}
+.container { 
+	width: 100%;
+	margin: auto;
+	max-width: 1000px;
+	background-color: orange;
+}
+.content {
+	background-color: black;
+	border: 2px solid green;
+	border-radius: 5px;
+}
+.navbar {
+	border: 2px solid green;
+	border-radius: 5px;
+}
