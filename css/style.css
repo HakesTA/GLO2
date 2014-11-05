@@ -1,11 +1,16 @@
 body {
 	background-color: #FFC2AA;
 }
+
+p {
+	padding-left: 1em;
+}
 .header img {
 	width: 100%;
 	margin: auto;
 	max-width:1000px;
-	border: 2px solid green;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
 	border-radius: 5px;
 }
 .container { 
@@ -17,7 +22,7 @@ body {
 }
 .content {
 	background-color: #AA5939;
-	border: 2px solid green;
+	border: 2px solid black;
 	border-radius: 5px;
 }
 .photos {
@@ -26,9 +31,11 @@ body {
 	margin-right: 35px;
 }
 .navbar {
-	border: 2px solid green;
-	border-radius: 5px;
 	background-color: #551800;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	border-radius: 5px;
 }
 .video {
 	margin: 0 auto;
