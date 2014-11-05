@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE-edge">
 <meta name="viewport" content="width=device-width">
 <title></title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
 <script type="text/javascript">
 
 var slideimages = new Array() // create new array to preload images
@@ -43,37 +43,37 @@ slideimages[2].src = "images/halloweenbride.jpg"
 		</div>
 		<div class="navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="safety.html" title="Safety is very spooky">Safety</a></li>
-				<li><a href="table.html" title="A very spooky table">Table</a></li>
-				<li><a href="contactus.html" title="Ask us questions... if you dare">Questions</a></li>
+				<li><a href="safety.html" title="Safety is very spooky"><img src="images/safety.png" height="23px" alt="a very spooky safe guy"> Safety</a></li>
+				<li><a href="table.html" title="A very spooky table"><img src="images/spooky.png" height="23px" alt="a very spooky ghost"> Table of Spooky</a></li>
+				<li><a href="contactus.html" title="Ask us questions... if you dare"><img src="images/questionmark.png" height="23px" width="23px" alt="a very spooky question mark"> Questions</a></li>
+				<li><a href="http://www.spirithalloween.com/" title="A very spooky halloween store"><img src="images/store.png" height="23px" width="23px" alt="A very spooky store"> Halloween Store </a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
 <div class="content-container">
-
 	<img src="images/redridinghood.jpg" align="left" id="slideShow" class="photos" height="350px" width="300px" alt="a little girl dressed as red riding hood with her dog dressed as the big bad wolf"> 
-<script type="text/javascript">
+	<script type="text/javascript">
 
-//variable that will increment through the images
-var step=0
+		//variable that will increment through the images
+		var step=0
 
-function slideit(){
- //if browser does not support the image object, exit.
- if (!document.images)
-  return
- document.getElementById('slideShow').src = slideimages[step].src
- if (step<2)
-  step++
- else
-  step=0
- //call function "slideit()" every 3 seconds
- setTimeout("slideit()",3000)
-}
-
-slideit()
-</script>
+		function slideit(){
+		//if browser does not support the image object, exit.
+		if (!document.images)
+			return
+		document.getElementById('slideShow').src = slideimages[step].src
+		if (step<2)
+			step++
+		else
+			step=0
+		//call function "slideit()" every 3 seconds
+		setTimeout("slideit()",3000)
+	}
+	slideit()
+	</script>
+	
 	<div class="content">
 		<h1> Welcome to Spooky Safety! </h1>
 		<p> We are an organization of humanitarians with one goal in mind: The safety of others on halloween. Halloween can be very spooky at times for both adults and children. There are ghosts running rampantly down the streets, frankenstein monsters free to stomp down corodors, and other frightening spooky things! So enjoy this site, we have ample material on how to keep safe and steer clear of the ne'er do wells. There is also a very, very spooky contact form if you feel we did not properly address your concerns. Other thoughts, complaints, and other spoooooky material should be brought to our attention too, so don't be afraid to use the e-mail form</p>
@@ -82,6 +82,6 @@ slideit()
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/boostrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
