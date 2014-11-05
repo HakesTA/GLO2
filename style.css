@@ -2,6 +2,11 @@ body {
 	background-color: red;
 
 }
+.header img {
+	width: 100%;
+	margin: auto;
+	max-width:1000px;
+}
 .container { 
 	width: 100%;
 	margin: auto;
@@ -12,6 +17,11 @@ body {
 	background-color: black;
 	border: 2px solid green;
 	border-radius: 5px;
+}
+.content img {
+	border: 2px solid green;
+	border-radius: 5px;
+	margin-right: 35px;
 }
 .navbar {
 	border: 2px solid green;
