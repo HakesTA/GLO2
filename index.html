@@ -11,11 +11,11 @@
 
 var slideimages = new Array() // create new array to preload images
 slideimages[0] = new Image() // create new instance of image object
-slideimages[0].src = "images/header1.jpg" // set image object src property to an image's src, preloading that image in the process
+slideimages[0].src = "images/redridinghood.jpg" // set image object src property to an image's src, preloading that image in the process
 slideimages[1] = new Image()
-slideimages[1].src = "images/header2.jpg"
+slideimages[1].src = "images/baby-prisoner.jpg"
 slideimages[2] = new Image()
-slideimages[2].src = "images/header3.png"
+slideimages[2].src = "images/halloweenbride.jpg"
 
 </script>
 
@@ -27,30 +27,8 @@ slideimages[2].src = "images/header3.png"
 <body>
 <div class="container">
 <div class="header">
-<img src="images/header1.jpg" id="slideShow" alt="a very spooky header">
+<img src="images/header2.jpg" height="200px" alt="a very spooky header">
 </div>
-
-<script type="text/javascript">
-
-//variable that will increment through the images
-var step=0
-
-function slideit(){
- //if browser does not support the image object, exit.
- if (!document.images)
-  return
- document.getElementById('slideShow').src = slideimages[step].src
- if (step<2)
-  step++
- else
-  step=0
- //call function "slideit()" every 2.5 seconds
- setTimeout("slideit()",2500)
-}
-
-slideit()
-
-</script>
 
 <div class="navbar navbar-default navbar-static-top" role="navigation">
 	<div class="navbar-container">
@@ -74,8 +52,29 @@ slideit()
 </div>
 
 <div class="content-container">
+
+	<img src="images/redridinghood.jpg" align="left" id="slideShow" class="photos" height="350px" width="300px" alt="a little girl dressed as red riding hood with her dog dressed as the big bad wolf"> 
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slideShow').src = slideimages[step].src
+ if (step<2)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 3 seconds
+ setTimeout("slideit()",3000)
+}
+
+slideit()
+</script>
 	<div class="content">
-	<img src="images/redridinghood.jpg" align="left" height="350px" width="300px" alt="a little girl dressed as red riding hood with her dog dressed as the big bad wolf"> 
 		<h1> Welcome to Spooky Safety! </h1>
 		<p> We are an organization of humanitarians with one goal in mind: The safety of others on halloween. Halloween can be very spooky at times for both adults and children. There are ghosts running rampantly down the streets, frankenstein monsters free to stomp down corodors, and other frightening spooky things! So enjoy this site, we have ample material on how to keep safe and steer clear of the ne'er do wells. There is also a very, very spooky contact form if you feel we did not properly address your concerns. Other thoughts, complaints, and other spoooooky material should be brought to our attention too, so don't be afraid to use the e-mail form</p>
 	</div>
